@@ -32,6 +32,10 @@ Apply the policy to the subscription using
 
 *Note: Use your subscription id on the area marked XXXX-XXXX-XXXX-XXXX to apply the policy to your subscription*
 
+You should have a similar view as shown below
+
+![image info](./Policy_folder/Result_of_policy_assignment_list.png)
+
 #### 2. Create a Linux image using Packer
 
 First, determine your service principle credentials by entering the following command to get your client_id and client_secret
@@ -64,7 +68,11 @@ If your image creation was successful, you should have a simlar output as shown 
 
 ```cd Udacity_Azure_Devops_Lab1/Terraform_folder ```
 
-- Plan the Terraform resource deployment with ``` terraform plan -out solution.plan ```
+- Plan the Terraform resource deployment with 
+``` 
+terraform plan init
+terraform plan -out solution.plan 
+```
 
 From the vars.tf, the variables are defined to implement **DRY**. But also you have the option of entering the Prefix name for your resources and the number of VMs you want. the number of VMs is set to be at most 5. The prompt output is as shown below.  
 
@@ -73,6 +81,6 @@ From the vars.tf, the variables are defined to implement **DRY**. But also you h
 - create your resources with the command ``` terraform apply solution.plan ```
 
 ### Output
+Whwn the resources are created, you should have a similar view as shown below.
 
-
-**Your words here**
+![image info](./Terraform_folder/output.png)
