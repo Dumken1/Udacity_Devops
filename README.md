@@ -81,6 +81,6 @@ From the vars.tf, the variables are defined to implement **DRY**. But also you h
 - create your resources with the command ``` terraform apply solution.plan ```
 
 ### Output
-Whwn the resources are created, you should have a similar view as shown below.
+When the resources are created, you should have a similar view as shown below.
 
-![image info](./Terraform_folder/output.png)
+![image info](./Terraform_folder/terraform_out.png)
