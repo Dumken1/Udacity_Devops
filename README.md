@@ -60,5 +60,19 @@ If your image creation was successful, you should have a simlar output as shown 
 
 #### 3. Create and deploy Resources using terraform
 
+- To create the resources, enter the terraform folder containing the main.tf and vars.tf.
+
+```cd Udacity_Azure_Devops_Lab1/Terraform_folder ```
+
+- Plan the Terraform resource deployment with ``` terraform plan -out solution.plan ```
+
+From the vars.tf, the variables are defined to implement **DRY**. But also you have the option of entering the Prefix name for your resources and the number of VMs you want. the number of VMs is set to be at most 5. The prompt output is as shown below.  
+
+![image info](./Terraform_folder/Plan_prompt.png)
+
+- create your resources with the command ``` terraform apply solution.plan ```
+
 ### Output
+
+
 **Your words here**
